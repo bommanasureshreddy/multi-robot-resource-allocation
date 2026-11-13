@@ -1,0 +1,79 @@
+# =============================================================================
+# Global configuration for the Heterogeneous Multi-Robot Resource Allocation
+# project. All modules read parameters from here so nothing is hard-coded
+# and every experiment is reproducible.
+# =============================================================================
+
+project:
+  name: "dynamic-flow-heterogeneous-robot-allocation"
+  seed: 42
+  seeds_for_repeated_runs: [42, 123, 456, 789, 1000]
+
+paths:
+  dataset_root: "data/dataset"
+  results_root: "results"
+  models_root: "models"
+
+environment:
+  map_id: "MAP01"
+  width: 100
+  height: 100
+  resolution: 1
+
+robots:
+  total: 12
+  composition:
+    UGV: 4
+    USV: 4
+    UAV: 4
+
+tasks:
+  total: 30
+  composition:
+    LAND: 10
+    WATER: 10
+    AIR: 10
+  priority_scale:
+    1: "Low"
+    2: "Normal"
+    3: "High"
+    4: "Critical"
+    5: "Emergency"
+
+battery:
+  # A robot below this SOC (%) loses feasibility for non-critical tasks.
+  default_min_soc: 15.0
+  # Simplified degradation model: SOH decreases as a function of cumulative
+  # DoD-weighted energy throughput. This is explicitly a simulation-level
+  # model, not an electrochemical one.
+  degradation_model: "linear_dod_weighted"
+
+astar:
+  diagonal_movement: true
+  step_cost: 1.0
+
+auction:
+  # Weights are normalized (sum to 1.0) so no single term dominates
+  # unintentionally. These are starting values; the fairness/ablation study
+  # (Section 27/28) may re-tune them from measured data, not guesses.
+  weights:
+    priority: 0.20
+    distance_cost: 0.15
+    path_cost: 0.10
+    predicted_energy: 0.15
+    soc: 0.12
+    dod: 0.05
+    soh: 0.05
+    risk: 0.08
+    deadline: 0.05
+    workload_fairness: 0.05
+
+network_flow:
+  algorithm: "edmonds_karp"
+
+scalability_test_sizes:
+  - {robots: 6, tasks: 12}
+  - {robots: 12, tasks: 30}
+  - {robots: 18, tasks: 45}
+  - {robots: 30, tasks: 60}
+  - {robots: 50, tasks: 100}

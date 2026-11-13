@@ -1,0 +1,74 @@
+[
+  {
+    "target": "energy_consumption",
+    "model": "linear",
+    "r2": 0.8549356924022158,
+    "mae": 47.02269774277887
+  },
+  {
+    "target": "energy_consumption",
+    "model": "random_forest",
+    "r2": 0.9470462142313071,
+    "mae": 26.874289347701655
+  },
+  {
+    "target": "energy_consumption",
+    "model": "gradient_boosting",
+    "r2": 0.9493833549400449,
+    "mae": 26.64659341938177
+  },
+  {
+    "target": "completion_time",
+    "model": "linear",
+    "r2": 0.7776339252214242,
+    "mae": 11.579464337921934
+  },
+  {
+    "target": "completion_time",
+    "model": "random_forest",
+    "r2": 0.8654549425833469,
+    "mae": 9.03184019171377
+  },
+  {
+    "target": "completion_time",
+    "model": "gradient_boosting",
+    "r2": 0.8736460935568275,
+    "mae": 8.800036604190593
+  },
+  {
+    "target": "task_risk",
+    "model": "linear",
+    "r2": 0.8503088309910267,
+    "mae": 0.46740168747832644
+  },
+  {
+    "target": "task_risk",
+    "model": "random_forest",
+    "r2": 0.9230661316371582,
+    "mae": 0.35691321326328196
+  },
+  {
+    "target": "task_risk",
+    "model": "gradient_boosting",
+    "r2": 0.9322748938366681,
+    "mae": 0.33438009542321667
+  },
+  {
+    "target": "energy_consumption",
+    "selected_best_model": "gradient_boosting",
+    "r2": 0.9493833549400449,
+    "path": "models\\energy_consumption_gradient_boosting.joblib"
+  },
+  {
+    "target": "completion_time",
+    "selected_best_model": "gradient_boosting",
+    "r2": 0.8736460935568275,
+    "path": "models\\completion_time_gradient_boosting.joblib"
+  },
+  {
+    "target": "task_risk",
+    "selected_best_model": "gradient_boosting",
+    "r2": 0.9322748938366681,
+    "path": "models\\task_risk_gradient_boosting.joblib"
+  }
+]

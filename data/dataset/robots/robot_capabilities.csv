@@ -1,0 +1,13 @@
+robot_id,robot_type,search,rescue,transport,surveillance,inspection,medical,land_operation,water_operation,air_operation
+UGV01,UGV,1,1,1,0,1,0,1,0,0
+UGV02,UGV,1,1,1,0,1,1,1,0,0
+UGV03,UGV,1,1,1,0,1,0,1,0,0
+UGV04,UGV,1,1,1,0,1,1,1,0,0
+USV01,USV,1,1,1,1,0,1,0,1,0
+USV02,USV,1,1,1,1,0,0,0,1,0
+USV03,USV,1,1,1,1,0,1,0,1,0
+USV04,USV,1,1,1,1,0,0,0,1,0
+UAV01,UAV,1,0,0,1,1,0,0,0,1
+UAV02,UAV,1,0,0,1,1,0,0,0,1
+UAV03,UAV,1,0,0,1,1,0,0,0,1
+UAV04,UAV,1,0,0,1,1,0,0,0,1

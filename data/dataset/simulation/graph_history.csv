@@ -1,0 +1,107 @@
+run_id,t,event,event_id,event_type,detail,n_available_robots,n_pending_tasks,n_assigned,workload_fairness,energy_fairness,battery_stress_fairness
+metrics_selftest,0.0,EVENT_APPLIED,E001,NEW_TASK,"task T01 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,0.0,EVENT_APPLIED,E002,NEW_TASK,"task T02 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,0.0,EVENT_APPLIED,E003,NEW_EMERGENCY,"task T03 released (priority=5, emergency=True)",,,,,,
+metrics_selftest,0.0,EVENT_APPLIED,E004,NEW_TASK,"task T04 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,0.0,EVENT_APPLIED,E005,NEW_TASK,"task T05 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,0.0,EVENT_APPLIED,E006,NEW_TASK,"task T06 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,0.0,ALLOCATE,,,,12.0,6.0,4.0,,,
+metrics_selftest,0.0,FAIRNESS,,,,,,,1.0,1.0,0.8175666985549501
+metrics_selftest,12.0,EVENT_APPLIED,E007,NEW_TASK,"task T07 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,12.0,ALLOCATE,,,,9.0,3.0,0.0,,,
+metrics_selftest,12.0,FAIRNESS,,,,,,,0.08333333333333333,0.08333333333333333,0.8822965655643366
+metrics_selftest,19.0,EVENT_APPLIED,E008,NEW_TASK,"task T08 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,19.0,ALLOCATE,,,,9.0,4.0,1.0,,,
+metrics_selftest,19.0,FAIRNESS,,,,,,,0.08333333333333333,0.08333333333333333,0.8822965655643366
+metrics_selftest,21.0,EVENT_APPLIED,E009,NEW_TASK,"task T09 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,21.0,ALLOCATE,,,,8.0,4.0,0.0,,,
+metrics_selftest,21.0,FAIRNESS,,,,,,,0.08333333333333333,0.08333333333333333,0.8822965655643366
+metrics_selftest,23.0,EVENT_APPLIED,E010,NEW_TASK,"task T10 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,23.0,ALLOCATE,,,,8.0,5.0,0.0,,,
+metrics_selftest,23.0,FAIRNESS,,,,,,,0.08333333333333333,0.08333333333333333,0.8822965655643366
+metrics_selftest,27.0,EVENT_APPLIED,E039,ENVIRONMENT_CHANGE,zone Z_RESTRICTED_1 risk_level 4.0 -> 5.0,,,,,,
+metrics_selftest,27.0,ALLOCATE,,,,9.0,5.0,0.0,,,
+metrics_selftest,27.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,29.0,EVENT_APPLIED,E011,NEW_TASK,"task T11 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,29.0,ALLOCATE,,,,9.0,6.0,1.0,,,
+metrics_selftest,29.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,30.0,EVENT_APPLIED,E012,NEW_TASK,"task T12 released (priority=4, emergency=False)",,,,,,
+metrics_selftest,30.0,ALLOCATE,,,,8.0,6.0,0.0,,,
+metrics_selftest,30.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,34.0,EVENT_APPLIED,E013,NEW_EMERGENCY,"task T13 released (priority=5, emergency=True)",,,,,,
+metrics_selftest,34.0,EVENT_APPLIED,E040,ENVIRONMENT_CHANGE,zone Z_RESTRICTED_2 risk_level 4.0 -> 5.0,,,,,,
+metrics_selftest,34.0,ALLOCATE,,,,8.0,7.0,1.0,,,
+metrics_selftest,34.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,35.0,EVENT_APPLIED,E014,NEW_TASK,"task T14 released (priority=4, emergency=False)",,,,,,
+metrics_selftest,35.0,ALLOCATE,,,,7.0,7.0,1.0,,,
+metrics_selftest,35.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,36.0,EVENT_APPLIED,E015,NEW_TASK,"task T15 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,36.0,ALLOCATE,,,,6.0,7.0,1.0,,,
+metrics_selftest,36.0,FAIRNESS,,,,,,,0.16666666666666666,0.12611343832490152,0.8650719755296647
+metrics_selftest,37.0,EVENT_APPLIED,E016,NEW_TASK,"task T16 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,37.0,ALLOCATE,,,,6.0,7.0,0.0,,,
+metrics_selftest,37.0,FAIRNESS,,,,,,,0.25,0.1923957922325399,0.8315000627337001
+metrics_selftest,47.0,EVENT_APPLIED,E037,TASK_CANCELLED,task T10 cancelled and removed from active graph,,,,,,
+metrics_selftest,47.0,ALLOCATE,,,,9.0,6.0,2.0,,,
+metrics_selftest,47.0,FAIRNESS,,,,,,,0.5,0.3554939729239933,0.874644521330631
+metrics_selftest,50.0,EVENT_APPLIED,E038,TASK_CANCELLED,task T11 cancelled and removed from active graph,,,,,,
+metrics_selftest,50.0,ALLOCATE,,,,7.0,4.0,0.0,,,
+metrics_selftest,50.0,FAIRNESS,,,,,,,0.5,0.3554939729239933,0.874644521330631
+metrics_selftest,57.0,EVENT_APPLIED,E017,NEW_TASK,"task T17 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,57.0,ALLOCATE,,,,7.0,5.0,1.0,,,
+metrics_selftest,57.0,FAIRNESS,,,,,,,0.5,0.3554939729239933,0.874644521330631
+metrics_selftest,60.0,EVENT_APPLIED,E035,ROBOT_FAILURE,"robot UAV04 FAILED, removed from graph",,,,,,
+metrics_selftest,60.0,ALLOCATE,,,,5.0,4.0,0.0,,,
+metrics_selftest,60.0,FAIRNESS,,,,,,,0.5,0.3554939729239933,0.874644521330631
+metrics_selftest,62.0,EVENT_APPLIED,E018,NEW_TASK,"task T18 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,62.0,ALLOCATE,,,,7.0,5.0,1.0,,,
+metrics_selftest,62.0,FAIRNESS,,,,,,,0.6666666666666666,0.4825593046685096,0.8812188500862529
+metrics_selftest,77.0,EVENT_APPLIED,E019,NEW_TASK,"task T19 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,77.0,ALLOCATE,,,,8.0,5.0,0.0,,,
+metrics_selftest,77.0,FAIRNESS,,,,,,,0.6944444444444444,0.5997171690370408,0.9198702330958092
+metrics_selftest,80.0,EVENT_APPLIED,E036,ROBOT_FAILURE,"robot USV03 FAILED, removed from graph",,,,,,
+metrics_selftest,80.0,ALLOCATE,,,,7.0,5.0,0.0,,,
+metrics_selftest,80.0,FAIRNESS,,,,,,,0.6944444444444444,0.5997171690370408,0.9198702330958092
+metrics_selftest,91.0,EVENT_APPLIED,E020,NEW_TASK,"task T20 released (priority=4, emergency=False)",,,,,,
+metrics_selftest,91.0,ALLOCATE,,,,9.0,6.0,1.0,,,
+metrics_selftest,91.0,FAIRNESS,,,,,,,0.6666666666666666,0.5993738476310921,0.899237288411633
+metrics_selftest,107.0,EVENT_APPLIED,E021,NEW_TASK,"task T21 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,107.0,EVENT_APPLIED,E022,NEW_TASK,"task T22 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,107.0,ALLOCATE,,,,10.0,7.0,1.0,,,
+metrics_selftest,107.0,FAIRNESS,,,,,,,0.6282051282051282,0.5674032536712647,0.8891786285010648
+metrics_selftest,115.0,EVENT_APPLIED,E023,NEW_TASK,"task T23 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,115.0,ALLOCATE,,,,10.0,7.0,1.0,,,
+metrics_selftest,115.0,FAIRNESS,,,,,,,0.6944444444444444,0.6191639277395692,0.9050562854599542
+metrics_selftest,118.0,EVENT_APPLIED,E024,NEW_TASK,"task T24 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,118.0,ALLOCATE,,,,9.0,7.0,1.0,,,
+metrics_selftest,118.0,FAIRNESS,,,,,,,0.6944444444444444,0.6191639277395692,0.9050562854599542
+metrics_selftest,120.0,EVENT_APPLIED,E025,NEW_TASK,"task T25 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,120.0,ALLOCATE,,,,8.0,7.0,0.0,,,
+metrics_selftest,120.0,FAIRNESS,,,,,,,0.6944444444444444,0.6191639277395692,0.9050562854599542
+metrics_selftest,123.0,EVENT_APPLIED,E026,NEW_TASK,"task T26 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,123.0,ALLOCATE,,,,9.0,8.0,0.0,,,
+metrics_selftest,123.0,FAIRNESS,,,,,,,0.7619047619047619,0.6903244705407184,0.9196919410446082
+metrics_selftest,133.0,EVENT_APPLIED,E031,LOW_BATTERY,"LOW_BATTERY warning for UAV03 (current SOC=63.3%, min_soc=13.6%)",,,,,,
+metrics_selftest,133.0,ALLOCATE,,,,10.0,8.0,0.0,,,
+metrics_selftest,133.0,FAIRNESS,,,,,,,0.7768817204301075,0.6995023357919067,0.9096511236072121
+metrics_selftest,137.0,EVENT_APPLIED,E027,NEW_EMERGENCY,"task T27 released (priority=5, emergency=True)",,,,,,
+metrics_selftest,137.0,ALLOCATE,,,,10.0,9.0,0.0,,,
+metrics_selftest,137.0,FAIRNESS,,,,,,,0.7768817204301075,0.6995023357919067,0.9096511236072121
+metrics_selftest,142.0,EVENT_APPLIED,E028,NEW_TASK,"task T28 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,142.0,ALLOCATE,,,,10.0,10.0,0.0,,,
+metrics_selftest,142.0,FAIRNESS,,,,,,,0.7768817204301075,0.6995023357919067,0.9096511236072121
+metrics_selftest,143.0,EVENT_APPLIED,E029,NEW_TASK,"task T29 released (priority=2, emergency=False)",,,,,,
+metrics_selftest,143.0,ALLOCATE,,,,10.0,11.0,1.0,,,
+metrics_selftest,143.0,FAIRNESS,,,,,,,0.7768817204301075,0.6995023357919067,0.9096511236072121
+metrics_selftest,151.0,EVENT_APPLIED,E032,LOW_BATTERY,"LOW_BATTERY warning for UAV02 (current SOC=77.3%, min_soc=18.2%)",,,,,,
+metrics_selftest,151.0,ALLOCATE,,,,9.0,10.0,0.0,,,
+metrics_selftest,151.0,FAIRNESS,,,,,,,0.7768817204301075,0.6995023357919067,0.9096511236072121
+metrics_selftest,152.0,EVENT_APPLIED,E033,LOW_BATTERY,"LOW_BATTERY warning for UGV01 (current SOC=47.7%, min_soc=18.7%)",,,,,,
+metrics_selftest,152.0,ALLOCATE,,,,10.0,10.0,0.0,,,
+metrics_selftest,152.0,FAIRNESS,,,,,,,0.7941176470588235,0.6808872758681745,0.8774260032367694
+metrics_selftest,159.0,EVENT_APPLIED,E034,LOW_BATTERY,"LOW_BATTERY warning for UAV01 (current SOC=42.7%, min_soc=12.7%)",,,,,,
+metrics_selftest,159.0,ALLOCATE,,,,10.0,10.0,0.0,,,
+metrics_selftest,159.0,FAIRNESS,,,,,,,0.7941176470588235,0.6808872758681745,0.8774260032367694
+metrics_selftest,166.0,EVENT_APPLIED,E030,NEW_TASK,"task T30 released (priority=3, emergency=False)",,,,,,
+metrics_selftest,166.0,ALLOCATE,,,,10.0,11.0,0.0,,,
+metrics_selftest,166.0,FAIRNESS,,,,,,,0.7941176470588235,0.6808872758681745,0.8774260032367694

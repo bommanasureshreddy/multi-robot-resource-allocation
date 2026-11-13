@@ -1,0 +1,7 @@
+{
+  "config": "A9_plus_gatppo (SEPARATE TRACK -- see notebook 10)",
+  "metric": "episode_reward (Section 21 reward fn, NOT comparable to completion-rate table)",
+  "gatppo_mean": 10.034712273793561,
+  "auction_baseline_mean": 9.037097013533437,
+  "n_eval_seeds": 3
+}
